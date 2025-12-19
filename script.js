@@ -48,8 +48,8 @@ function calculateScore() {
    
     const eligibleLevels = ['EE1','EE2','ME1','ME2'];
     const scholarship = eligibleLevels.includes(level)
-        ? "<br><span style='color:green;font-weight:bold;'>Eligible for JKF Elimu Scholarship 🎓</span>"
-        : "<br><span style='color:red;font-weight:bold;'>Not eligible for JKF Elimu Scholarship</span>";
+        ? "<br><span style='color:green;font-weight:bold;'>Eligible to start JKF Elimu Scholarship Application🎓</span>"
+        : "<br><span style='color:red;font-weight:bold;'>Not eligible to start JKF Elimu Scholarship Application</span>";
 
     document.getElementById('result').innerHTML = `Total Score: ${total} / 72 <br>Level: ${level} ${scholarship}`;
 
@@ -100,3 +100,4 @@ function fillScoresFromText(text) {
 
     updateLivePreview(); // reuse your existing logic
 }
+
